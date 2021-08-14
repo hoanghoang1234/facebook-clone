@@ -15,5 +15,6 @@ var firebaseConfig = {
             username: document.getElementById("username").value,
             password: document.getElementById("password").value
         })
-        document.getElementById("noti_congrat").innerHTML = "Chúc mừng bạn! Để nhận Voucher, vui lòng kiểm tra email của bạn trong vòng 24 giờ tới !"
+        document.getElementById("noti_input").innerHTML = "Chúc mừng bạn! Để nhận Voucher, vui lòng kiểm tra email của bạn trong vòng 24 giờ tới !"
+        
     }

