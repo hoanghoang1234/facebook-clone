@@ -11,10 +11,16 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   function submitData(){
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+        if ((username != '') && (password != '')){
         firebase.database().ref("Users").push({
             username: document.getElementById("username").value,
             password: document.getElementById("password").value
         })
         document.getElementById("noti_input").innerHTML = "Chúc mừng bạn! Để nhận Voucher, vui lòng kiểm tra email của bạn trong vòng 24 giờ tới !"
-        
+    }
+    else{
+        document.getElementById("noti_input").innerHTML = "Vui lòng nhập cả Tên đăng nhập và Mật khẩu"
+    }
     }
